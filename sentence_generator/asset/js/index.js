@@ -1,5 +1,5 @@
-const btnEl = document.getElementById('btn');               
-const jokeEl = document.getElementById('joke');
+const btnEl = document.getElementById('btn');   // * Tham chiếu đến phần tử HTML có id là `btn` và gán cho biến `btnEl`.           
+const jokeEl = document.getElementById('joke');  // * Tham chiếu đến phần tử HTML có id là `joke` và gán cho biến `jokeEl`.
 const API_KEY = "Afg76bFV0DZDjk+JMtW8Og==Cux6zeb5WyXgZj49";
 const options ={
     method: "GET",
@@ -12,7 +12,7 @@ const API_URl = "https://api.api-ninjas.com/v1/dadjokes?limit=1"
 btnEl.addEventListener("click", async function(){
 
     try {
-        jokeEl.innerHTML = ".............";
+        jokeEl.innerText = ".....";
         btnEl.disabled = true;
         btnEl.innerText ="Chờ xíu😊😊"
      const response = await fetch(API_URl, options);
